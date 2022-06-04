@@ -107,7 +107,6 @@ print(my_file.readlines())
 # ['hello world\n', 'how are you?\n', 'Cool and you?\n']
 my_file.close()
 
-
 # Do not need to close file manually if we use with
 with open("test.txt") as file:
     print(file.readlines())
@@ -117,3 +116,10 @@ print(121 ** 0.5)
 # 11.0
 print(11 ** 2)
 # 121
+
+list_1 = [0, 2] * 3
+print(list_1)
+# [0, 2, 0, 2, 0, 2]
+list_1.sort()
+print(list_1)
+# [0, 0, 0, 2, 2, 2]
