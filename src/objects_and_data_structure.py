@@ -68,3 +68,23 @@ print(my_tuple.index(2))
 # 1
 print(my_tuple[4])
 # 2
+
+my_set = {1, 1, 1, 2, 2, 2}
+print(my_set)
+# {1, 2}
+my_set.add(5)
+print(my_set)
+# {1, 2, 5}
+my_set.add(1)
+print(my_set)
+# {1, 2, 5}
+
+my_set2 = set()
+my_set2.add(1)
+my_set2.add(1)
+my_set2.add(3)
+print(my_set2)
+# {1, 3}
+
+print(set('Mississippi'))
+# {'s', 'i', 'M', 'p'}
