@@ -27,3 +27,7 @@ finally:
     print("I am working always")
 # Exception caught
 # I am working always
+
+
+# Run Pylint analizer
+# pylint src/errors_and_exceptions.py -r y
