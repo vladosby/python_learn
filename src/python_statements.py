@@ -21,3 +21,16 @@ for key, value in {"a": 1, "b": 2, "c": 3}.items():
 # key=a, value=1
 # key=b, value=2
 # key=c, value=3
+
+x = 0
+while x < 5:
+    print(f"Increase x={x}")
+    x += 1
+else:
+    print("x is bigger than 5")
+# Increase x=0
+# Increase x=1
+# Increase x=2
+# Increase x=3
+# Increase x=4
+# x is bigger than 5
