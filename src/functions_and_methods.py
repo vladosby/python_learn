@@ -60,3 +60,25 @@ print(list(filter1))
 
 print(list(map(lambda num: num ** 2, test_array1)))
 # [1, 4, 9, 16, 25]
+
+
+global_variable = 50
+
+
+def override_global():
+    global global_variable
+
+    global_variable = "New Value"
+    x = 10
+    print(f"globals={globals()}")
+    print(f"locals={locals()}")
+
+
+# globals={'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7fddf8028c70>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '/Users/vladislavki/Documents/projects/own/python_learn/src/functions_and_methods.py', '__cached__': None, 'my_func1': <function my_func1 at 0x7fdd88036280>, 'my_func2': <function my_func2 at 0x7fddd80fb550>, 'my_func3': <function my_func3 at 0x7fddd80fb4c0>, 'my_func4': <function my_func4 at 0x7fddd80fb430>, 'square': <function square at 0x7fddd80fb3a0>, 'test_array1': [1, 2, 3, 4, 5], 'result1': <map object at 0x7fdda804b6a0>, 'check_even': <function check_even at 0x7fddd80fb310>, 'filter1': <filter object at 0x7fdda804b430>, 'global_variable': 'New Value', 'override_global': <function override_global at 0x7fddd80fb1f0>}
+# locals={'x': 10}
+
+print(global_variable)
+# 50
+override_global()
+print(global_variable)
+# New Value
