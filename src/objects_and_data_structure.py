@@ -123,3 +123,9 @@ print(list_1)
 list_1.sort()
 print(list_1)
 # [0, 0, 0, 2, 2, 2]
+list_2 = [0, 2] * 3
+list_3 = sorted(list_2)
+print(list_2)
+# [0, 2, 0, 2, 0, 2]
+print(list_3)
+# [0, 0, 0, 2, 2, 2]
