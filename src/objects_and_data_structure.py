@@ -49,3 +49,13 @@ print('{0:=<8} | {1:-^8} | {2:.>8}'.format('Left', 'Center', 'Right'))
 print('{0:=<8} | {1:-^8} | {2:.>8}'.format(11, 22, 33))
 # Left==== | -Center- | ...Right
 # 11====== | ---22--- | ......33
+
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+print(my_dict.keys())
+# dict_keys(['a', 'b', 'c'])
+print(my_dict.values())
+# dict_values([1, 2, 3])
+print(my_dict.items())
+# dict_items([('a', 1), ('b', 2), ('c', 3)])
+print(list(my_dict.values())[0])
+#  1
