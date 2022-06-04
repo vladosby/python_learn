@@ -31,3 +31,16 @@ finally:
 
 # Run Pylint analizer
 # pylint src/errors_and_exceptions.py -r y
+
+
+import unittest
+
+class TestClass(unittest.TestCase):
+
+    def test_square_success(self):
+        r = square(11)
+        self.assertEqual(121, r)
+
+    def test_square_exception(self):
+        with self.assertRaises(Exception):
+            square(1)
