@@ -112,3 +112,8 @@ my_file.close()
 with open("test.txt") as file:
     print(file.readlines())
 # ['hello world\n', 'how are you?\n', 'Cool and you?\n']
+
+print(121 ** 0.5)
+# 11.0
+print(11 ** 2)
+# 121
