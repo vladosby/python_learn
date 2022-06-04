@@ -1,3 +1,4 @@
+# https://github.com/Pierian-Data/Complete-Python-3-Bootcamp
 string = "hello world"
 
 # slicing [start:stop:step]
@@ -59,3 +60,11 @@ print(my_dict.items())
 # dict_items([('a', 1), ('b', 2), ('c', 3)])
 print(list(my_dict.values())[0])
 #  1
+
+my_tuple = (1, 2, 3, 1, 2, 1)
+print(my_tuple.count(1))
+# 3
+print(my_tuple.index(2))
+# 1
+print(my_tuple[4])
+# 2
