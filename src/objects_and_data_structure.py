@@ -88,3 +88,27 @@ print(my_set2)
 
 print(set('Mississippi'))
 # {'s', 'i', 'M', 'p'}
+
+
+my_file = open("test.txt")
+print(my_file.read())
+# hello world
+# how are you?
+# Cool and you?
+print(my_file.read())
+#
+my_file.seek(0)
+print(my_file.read())
+# hello world
+# how are you?
+# Cool and you?
+my_file.seek(0)
+print(my_file.readlines())
+# ['hello world\n', 'how are you?\n', 'Cool and you?\n']
+my_file.close()
+
+
+# Do not need to close file manually if we use with
+with open("test.txt") as file:
+    print(file.readlines())
+# ['hello world\n', 'how are you?\n', 'Cool and you?\n']
