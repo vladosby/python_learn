@@ -90,3 +90,22 @@ print(randint(1, 10))
 # input_value = input("what is you name?") todo uncomment
 # print(input_value) todo uncomment
 # Vlad
+
+my_list1 = []
+for letter in "abcdf":
+    my_list1.append(letter)
+print(my_list1)
+# ['a', 'b', 'c', 'd', 'f']
+
+my_list2 = [ltr for ltr in "abcdf"]
+print(my_list2)
+# ['a', 'b', 'c', 'd', 'f']
+
+print([f"x={x}" for x in range(0, 10) if x % 2 == 0])
+# ['x=0', 'x=2', 'x=4', 'x=6', 'x=8']
+
+print([f"x={x}" if x % 2 == 0 else "Odd" for x in range(0, 10)])
+# ['x=0', 'Odd', 'x=2', 'Odd', 'x=4', 'Odd', 'x=6', 'Odd', 'x=8', 'Odd']
+
+print([x * y for x in [1, 2, 3] for y in [1, 10, 100]])
+# [1, 10, 100, 2, 20, 200, 3, 30, 300]
